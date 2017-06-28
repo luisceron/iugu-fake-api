@@ -10,7 +10,7 @@ docker rm iugu-fake-api
 docker run -d -p 8000:3000 --name iugu-fake-api leonardofalk/iugu-fake-api:latest
 ```
 
-Abrir [localhost:8000](localhost:8000)
+Abrir [localhost:8000](http://localhost:8000)
 
 ### Rotas
 
