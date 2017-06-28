@@ -7,12 +7,7 @@ iugu-fake-api é um servidor REST fake para desenvolvimento de aplicações de c
 ```bash
 docker kill iugu-fake-api
 docker rm iugu-fake-api
-docker run \
-  -v $(pwd)/db.json:/usr/src/iugu-fake-api/src/db.json \
-  -v $(pwd)/routes.json:/usr/src/iugu-fake-api/src/routes.json \
-  -p 8000:3000 \
-  --name iugu-fake-api \
-  -d leonardofalk/iugu-fake-api:latest
+docker run -d -p 8000:3000 --name iugu-fake-api leonardofalk/iugu-fake-api:latest
 ```
 
 Abrir [localhost:8000](localhost:8000)

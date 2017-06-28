@@ -6,8 +6,7 @@ FROM node:6.11-slim
 
 ENV PROJECT_PATH /usr/src/$PROJECT_NAME/src/
 RUN npm i -g json-server
-VOLUME $PROJECT_PATH/db.json
-VOLUME $PROJECT_PATH/routes.json
+COPY db.json routes.json $PROJECT_PATH
 
 WORKDIR $PROJECT_PATH
 CMD json-server --watch db.json --routes routes.json
