@@ -3,5 +3,664 @@
     "success": true,
     "message": "Autorizado",
     "invoice_id": "53B53D39F7AD44C4B8B873E15F067193"
-  }
+  },
+
+  "payment_token": {
+    "id": "77C2565F6F064A26ABED4255894224F0",
+    "method": "credit_card",
+    "extra_info": {
+      "brand": "VISA",
+      "holder_name": "João Silva",
+      "display_number": "XXXX-XXXX-XXXX-1111",
+      "month": 12,
+      "year": 2019
+    },
+    "test": false
+  },
+
+  "customers": [{
+      "id": "FF3149CE52CB4A789925F154B489BFDD",
+      "email": "email@email.com",
+      "name": "Nome do Cliente",
+      "notes": "Anotações Gerais",
+      "created_at": "2013-11-18T14:58:30-03:00",
+      "updated_at": "2013-11-18T14:58:30-03:00"
+    },
+    {
+      "id": "912FD57927FA43DEB0223C819E18DDFE",
+      "email": "email@email.com",
+      "name": "Nome do Cliente",
+      "notes": "Anotações Gerais",
+      "created_at": "2013-11-18T14:58:30-03:00",
+      "updated_at": "2013-11-18T14:58:30-03:00"
+    },
+    {
+      "id": "32CE45D8B42B4AEEA3D1A1D9227E1790",
+      "email": "email@gmail.com",
+      "name": null,
+      "notes": null,
+      "created_at": "2013-11-18T14:58:30-03:00",
+      "updated_at": "2013-11-18T14:58:30-03:00"
+    },
+    {
+      "id": "1AF1B6EC280149708773FED03EB407AA",
+      "email": "teste@gmail.com",
+      "name": null,
+      "notes": null,
+      "created_at": "2013-11-18T14:58:30-03:00",
+      "updated_at": "2013-11-18T14:58:30-03:00"
+    },
+    {
+      "id": "D65B556E19ED4173976421E84EE7B251",
+      "email": "cliente@gmail.com",
+      "name": null,
+      "notes": null,
+      "created_at": "2013-11-18T14:58:30-03:00",
+      "updated_at": "2013-11-18T14:58:30-03:00"
+    }
+  ],
+
+  "payment_methods": [{
+    "id": "48D603C05F634244A1D3FC2BFF35D10A",
+    "description": "Meu Cartão de Crédito Um",
+    "item_type": "credit_card",
+    "data": {
+      "holder_name": "Joao Silva",
+      "display_number": "XXXX-XXXX-XXXX-1111",
+      "brand": "visa",
+      "month": 10,
+      "year": 2022
+    }
+  }, {
+    "id": "9B41FB19CBA44913B1EF990A10382E7E",
+    "description": "Meu Cartão de Crédito Dois",
+    "item_type": "credit_card",
+    "data": {
+      "holder_name": "Jose Santos",
+      "display_number": "XXXX-XXXX-XXXX-1111",
+      "brand": "visa",
+      "month": 7,
+      "year": 2019
+    }
+  }],
+
+  "invoices_index": {
+    "facets": {
+      "status": {
+        "_type": "terms",
+        "missing": 0,
+        "total": 2,
+        "other": 0,
+        "terms": [{
+            "term": "paid",
+            "count": 1
+          },
+          {
+            "term": "pending",
+            "count": 1
+          }
+        ]
+      }
+    },
+    "totalItems": 2,
+    "items": [{
+        "id": "E607FCCD119E45C59336DB78B54CF771",
+        "due_date": "2013-11-30",
+        "currency": "BRL",
+        "customer_id": null,
+        "discount_cents": null,
+        "email": "teste@teste.com",
+        "expiration_url": null,
+        "notification_url": null,
+        "return_url": null,
+        "status": "pending",
+        "tax_cents": null,
+        "updated_at": "2013-11-18T14:58:23-02:00",
+        "total_cents": 1000,
+        "commission_cents": null,
+        "secure_id": "e607fccd-119e-45c5-9336-db78b54cf771-314d",
+        "secure_url": "https://iugu.com/invoices/e607fccd-119e-45c5-9336-db78b54cf771-314d",
+        "user_id": null,
+        "commission": "R$ 0,00",
+        "total": "R$ 10,00",
+        "created_at": "18 Nov 14:58",
+        "items": [{
+          "id": "0E9E83C2E8B14AF0ADB2F5F6E97265AA",
+          "description": "Item Um",
+          "price_cents": 1000,
+          "quantity": 1,
+          "created_at": "2013-11-18T14:58:23-02:00",
+          "updated_at": "2013-11-18T14:58:23-02:00",
+          "price": "R$ 10,00"
+        }],
+        "variables": [],
+        "logs": []
+      },
+      {
+        "id": "F47FE578806747FE8FF71C1521934E81",
+        "due_date": "2013-10-24",
+        "currency": "BRL",
+        "customer_id": "32ce45d8-b42b-4aee-a3d1-a1d9227e1790",
+        "discount_cents": null,
+        "email": "teste@gmail.com",
+        "expiration_url": null,
+        "notification_url": null,
+        "return_url": null,
+        "status": "paid",
+        "tax_cents": null,
+        "updated_at": "2013-10-24T14:21:26-02:00",
+        "total_cents": 200,
+        "commission_cents": 0,
+        "secure_id": "f47fe578-8067-47fe-8ff7-1c1521934e81-3280",
+        "secure_url": "https://iugu.com/invoices/f47fe578-8067-47fe-8ff7-1c1521934e81-3280",
+        "commission": "R$ 0,00",
+        "user_id": null,
+        "total": "R$ 2,00",
+        "created_at": "24 Oct 14:21",
+        "items": [{
+          "id": "FBDBAF5E259C492C98E6C2CB493777F7",
+          "description": "Subscription Activation: plan1",
+          "price_cents": 200,
+          "quantity": 1,
+          "created_at": "2013-10-24T14:21:26-02:00",
+          "updated_at": "2013-10-24T14:21:26-02:00",
+          "price": "R$ 2,00"
+        }],
+        "variables": [],
+        "logs": []
+      }
+    ]
+  },
+
+  "invoices": [{
+      "id": "E607FCCD119E45C59336DB78B54CF771",
+      "due_date": "2013-11-30",
+      "currency": "BRL",
+      "customer_id": null,
+      "discount_cents": null,
+      "email": "teste@teste.com",
+      "expiration_url": null,
+      "notification_url": null,
+      "return_url": null,
+      "status": "pending",
+      "tax_cents": null,
+      "updated_at": "2013-11-18T14:58:23-02:00",
+      "total_cents": 1000,
+      "commission_cents": null,
+      "secure_id": "e607fccd-119e-45c5-9336-db78b54cf771-314d",
+      "secure_url": "https://iugu.com/invoices/e607fccd-119e-45c5-9336-db78b54cf771-314d",
+      "user_id": null,
+      "commission": "R$ 0,00",
+      "total": "R$ 10,00",
+      "created_at": "18 Nov 14:58",
+      "items": [{
+        "id": "0E9E83C2E8B14AF0ADB2F5F6E97265AA",
+        "description": "Item Um",
+        "price_cents": 1000,
+        "quantity": 1,
+        "created_at": "2013-11-18T14:58:23-02:00",
+        "updated_at": "2013-11-18T14:58:23-02:00",
+        "price": "R$ 10,00"
+      }],
+      "variables": [],
+      "logs": []
+    },
+    {
+      "id": "F47FE578806747FE8FF71C1521934E81",
+      "due_date": "2013-10-24",
+      "currency": "BRL",
+      "customer_id": "32ce45d8-b42b-4aee-a3d1-a1d9227e1790",
+      "discount_cents": null,
+      "email": "teste@gmail.com",
+      "expiration_url": null,
+      "notification_url": null,
+      "return_url": null,
+      "status": "paid",
+      "tax_cents": null,
+      "updated_at": "2013-10-24T14:21:26-02:00",
+      "total_cents": 200,
+      "commission_cents": 0,
+      "secure_id": "f47fe578-8067-47fe-8ff7-1c1521934e81-3280",
+      "secure_url": "https://iugu.com/invoices/f47fe578-8067-47fe-8ff7-1c1521934e81-3280",
+      "commission": "R$ 0,00",
+      "user_id": null,
+      "total": "R$ 2,00",
+      "created_at": "24 Oct 14:21",
+      "items": [{
+        "id": "FBDBAF5E259C492C98E6C2CB493777F7",
+        "description": "Subscription Activation: plan1",
+        "price_cents": 200,
+        "quantity": 1,
+        "created_at": "2013-10-24T14:21:26-02:00",
+        "updated_at": "2013-10-24T14:21:26-02:00",
+        "price": "R$ 2,00"
+      }],
+      "variables": [],
+      "logs": []
+    }
+  ],
+
+  "plans_index": {
+    "totalItems": 1,
+    "items": [{
+      "id": "593C92165AF44493B65DE17A216C76D6",
+      "name": "Plano Básico",
+      "identifier": "basic_plan",
+      "interval": 1,
+      "interval_type": "months",
+      "created_at": "2014-04-23T17:14:15-03:00",
+      "updated_at": "2014-04-23T17:19:46-03:00",
+      "prices": [{
+        "created_at": "2014-04-23T17:14:15-03:00",
+        "currency": "BRL",
+        "id": "F465EE77AC424DA2B075133C96FF10CA",
+        "updated_at": "2014-04-23T17:14:15-03:00",
+        "value_cents": 1000
+      }]
+    }]
+  },
+
+  "plans": [{
+    "id": "593C92165AF44493B65DE17A216C76D6",
+    "name": "Plano Básico",
+    "identifier": "basic_plan",
+    "interval": 1,
+    "interval_type": "months",
+    "created_at": "2014-04-23T17:14:15-03:00",
+    "updated_at": "2014-04-23T17:19:46-03:00",
+    "prices": [{
+      "created_at": "2014-04-23T17:14:15-03:00",
+      "currency": "BRL",
+      "id": "F465EE77AC424DA2B075133C96FF10CA",
+      "updated_at": "2014-04-23T17:14:15-03:00",
+      "value_cents": 1000
+    }]
+  }],
+
+  "subscriptions_index": {
+    "facets": {
+      "suspended": {
+        "_type": "filter",
+        "count": 1
+      },
+      "active": {
+        "_type": "filter",
+        "count": 1
+      },
+      "due": {
+        "_type": "filter",
+        "count": 1
+      }
+    },
+    "totalItems": 3,
+    "items": [{
+      "id": "ECF36F9AAF374D76A48646EDE8FE806D",
+      "suspended": false,
+      "plan_identifier": "id2",
+      "price_cents": 200,
+      "currency": "BRL",
+      "features": {
+        "feat": {
+          "name": "Feature",
+          "value": 10
+        }
+      },
+      "expires_at": null,
+      "created_at": "2013-11-19T11:24:29-02:00",
+      "updated_at": "2013-11-19T11:24:43-02:00",
+      "customer_name": "Nome do Cliente",
+      "customer_email": "email@email.com",
+      "cycled_at": null,
+      "customer_id": "FF3149CE52CB4A789925F154B489BFDD",
+      "plan_name": "plan1",
+      "customer_ref": "Nome do Cliente",
+      "plan_ref": "plan1",
+      "active": true,
+      "in_trial": null,
+      "recent_invoices": null,
+      "subitems": [{
+        "id": "6D518D88B33F48FEA8964D5573E220D3",
+        "description": "Item um",
+        "quantity": 1,
+        "price_cents": 1000,
+        "price": "R$ 10,00",
+        "total": "R$ 10,00"
+      }],
+      "logs": [{
+        "id": "477388CC4C024520B552641724A62970",
+        "description": "Fatura criada",
+        "notes": "Fatura criada 1x Ativação de Assinatura: plan1 = R$ 2,00;1x Item um = R$ 10,00;",
+        "created_at": "2013-11-19T11:24:43-02:00"
+      }, {
+        "id": "706436F169CE465B806163964A25400A",
+        "description": "Assinatura Criada",
+        "notes": "Assinatura Criada",
+        "created_at": "2013-11-19T11:24:29-02:00"
+      }]
+    }, {
+      "id": "ECF36F9AAF374D76A48646EDE8FE806D",
+      "suspended": false,
+      "plan_identifier": "id2",
+      "price_cents": 200,
+      "currency": "BRL",
+      "features": {
+        "feat": {
+          "name": "Feature",
+          "value": 10
+        }
+      },
+      "expires_at": null,
+      "created_at": "2013-11-19T11:24:29-02:00",
+      "updated_at": "2013-11-19T11:24:43-02:00",
+      "customer_name": "Nome do Cliente",
+      "customer_email": "email@email.com",
+      "cycled_at": null,
+      "customer_id": "FF3149CE52CB4A789925F154B489BFDD",
+      "plan_name": "plan1",
+      "customer_ref": "Nome do Cliente",
+      "plan_ref": "plan1",
+      "active": true,
+      "in_trial": null,
+      "recent_invoices": null,
+      "subitems": [{
+        "id": "6D518D88B33F48FEA8964D5573E220D3",
+        "description": "Item um",
+        "quantity": 1,
+        "price_cents": 1000,
+        "price": "R$ 10,00",
+        "total": "R$ 10,00"
+      }],
+      "logs": [{
+        "id": "477388CC4C024520B552641724A62970",
+        "description": "Fatura criada",
+        "notes": "Fatura criada 1x Ativação de Assinatura: plan1 = R$ 2,00;1x Item um = R$ 10,00;",
+        "created_at": "2013-11-19T11:24:43-02:00"
+      }, {
+        "id": "706436F169CE465B806163964A25400A",
+        "description": "Assinatura Criada",
+        "notes": "Assinatura Criada",
+        "created_at": "2013-11-19T11:24:29-02:00"
+      }]
+    }, {
+      "id": "ECF36F9AAF374D76A48646EDE8FE806D",
+      "suspended": false,
+      "plan_identifier": "id2",
+      "price_cents": 200,
+      "currency": "BRL",
+      "features": {
+        "feat": {
+          "name": "Feature",
+          "value": 10
+        }
+      },
+      "expires_at": null,
+      "created_at": "2013-11-19T11:24:29-02:00",
+      "updated_at": "2013-11-19T11:24:43-02:00",
+      "customer_name": "Nome do Cliente",
+      "customer_email": "email@email.com",
+      "cycled_at": null,
+      "customer_id": "FF3149CE52CB4A789925F154B489BFDD",
+      "plan_name": "plan1",
+      "customer_ref": "Nome do Cliente",
+      "plan_ref": "plan1",
+      "active": true,
+      "in_trial": null,
+      "recent_invoices": null,
+      "subitems": [{
+        "id": "6D518D88B33F48FEA8964D5573E220D3",
+        "description": "Item um",
+        "quantity": 1,
+        "price_cents": 1000,
+        "price": "R$ 10,00",
+        "total": "R$ 10,00"
+      }],
+      "logs": [{
+        "id": "477388CC4C024520B552641724A62970",
+        "description": "Fatura criada",
+        "notes": "Fatura criada 1x Ativação de Assinatura: plan1 = R$ 2,00;1x Item um = R$ 10,00;",
+        "created_at": "2013-11-19T11:24:43-02:00"
+      }, {
+        "id": "706436F169CE465B806163964A25400A",
+        "description": "Assinatura Criada",
+        "notes": "Assinatura Criada",
+        "created_at": "2013-11-19T11:24:29-02:00"
+      }]
+    }]
+  },
+
+  "subscriptions": [{
+      "id": "ECF36F9AAF374D76A48646EDE8FE806D",
+      "suspended": false,
+      "plan_identifier": "id2",
+      "price_cents": 200,
+      "currency": "BRL",
+      "features": {
+        "feat": {
+          "name": "Feature",
+          "value": 10
+        }
+      },
+      "expires_at": null,
+      "created_at": "2013-11-19T11:24:29-02:00",
+      "updated_at": "2013-11-19T11:24:43-02:00",
+      "customer_name": "Nome do Cliente",
+      "customer_email": "email@email.com",
+      "cycled_at": null,
+      "customer_id": "FF3149CE52CB4A789925F154B489BFDD",
+      "plan_name": "plan1",
+      "customer_ref": "Nome do Cliente",
+      "plan_ref": "plan1",
+      "active": true,
+      "in_trial": null,
+      "recent_invoices": null,
+      "subitems": [{
+        "id": "6D518D88B33F48FEA8964D5573E220D3",
+        "description": "Item um",
+        "quantity": 1,
+        "price_cents": 1000,
+        "price": "R$ 10,00",
+        "total": "R$ 10,00"
+      }],
+      "logs": [{
+        "id": "477388CC4C024520B552641724A62970",
+        "description": "Fatura criada",
+        "notes": "Fatura criada 1x Ativação de Assinatura: plan1 = R$ 2,00;1x Item um = R$ 10,00;",
+        "created_at": "2013-11-19T11:24:43-02:00"
+      }, {
+        "id": "706436F169CE465B806163964A25400A",
+        "description": "Assinatura Criada",
+        "notes": "Assinatura Criada",
+        "created_at": "2013-11-19T11:24:29-02:00"
+      }]
+    }, {
+      "id": "ECF36F9AAF374D76A48646EDE8FE806D",
+      "suspended": false,
+      "plan_identifier": "id2",
+      "price_cents": 200,
+      "currency": "BRL",
+      "features": {
+        "feat": {
+          "name": "Feature",
+          "value": 10
+        }
+      },
+      "expires_at": null,
+      "created_at": "2013-11-19T11:24:29-02:00",
+      "updated_at": "2013-11-19T11:24:43-02:00",
+      "customer_name": "Nome do Cliente",
+      "customer_email": "email@email.com",
+      "cycled_at": null,
+      "customer_id": "FF3149CE52CB4A789925F154B489BFDD",
+      "plan_name": "plan1",
+      "customer_ref": "Nome do Cliente",
+      "plan_ref": "plan1",
+      "active": true,
+      "in_trial": null,
+      "recent_invoices": null,
+      "subitems": [{
+        "id": "6D518D88B33F48FEA8964D5573E220D3",
+        "description": "Item um",
+        "quantity": 1,
+        "price_cents": 1000,
+        "price": "R$ 10,00",
+        "total": "R$ 10,00"
+      }],
+      "logs": [{
+        "id": "477388CC4C024520B552641724A62970",
+        "description": "Fatura criada",
+        "notes": "Fatura criada 1x Ativação de Assinatura: plan1 = R$ 2,00;1x Item um = R$ 10,00;",
+        "created_at": "2013-11-19T11:24:43-02:00"
+      }, {
+        "id": "706436F169CE465B806163964A25400A",
+        "description": "Assinatura Criada",
+        "notes": "Assinatura Criada",
+        "created_at": "2013-11-19T11:24:29-02:00"
+      }]
+    },
+    {
+      "id": "ECF36F9AAF374D76A48646EDE8FE806D",
+      "suspended": false,
+      "plan_identifier": "id2",
+      "price_cents": 200,
+      "currency": "BRL",
+      "features": {
+        "feat": {
+          "name": "Feature",
+          "value": 10
+        }
+      },
+      "expires_at": null,
+      "created_at": "2013-11-19T11:24:29-02:00",
+      "updated_at": "2013-11-19T11:24:43-02:00",
+      "customer_name": "Nome do Cliente",
+      "customer_email": "email@email.com",
+      "cycled_at": null,
+      "customer_id": "FF3149CE52CB4A789925F154B489BFDD",
+      "plan_name": "plan1",
+      "customer_ref": "Nome do Cliente",
+      "plan_ref": "plan1",
+      "active": true,
+      "in_trial": null,
+      "recent_invoices": null,
+      "subitems": [{
+        "id": "6D518D88B33F48FEA8964D5573E220D3",
+        "description": "Item um",
+        "quantity": 1,
+        "price_cents": 1000,
+        "price": "R$ 10,00",
+        "total": "R$ 10,00"
+      }],
+      "logs": [{
+        "id": "477388CC4C024520B552641724A62970",
+        "description": "Fatura criada",
+        "notes": "Fatura criada 1x Ativação de Assinatura: plan1 = R$ 2,00;1x Item um = R$ 10,00;",
+        "created_at": "2013-11-19T11:24:43-02:00"
+      }, {
+        "id": "706436F169CE465B806163964A25400A",
+        "description": "Assinatura Criada",
+        "notes": "Assinatura Criada",
+        "created_at": "2013-11-19T11:24:29-02:00"
+      }]
+    }
+  ],
+
+  "transfers_index": {
+    "sent": [{
+      "id": "1234565F6F06412345ED425581234567",
+      "created_at": "2013-11-19T11:24:29-02:00",
+      "amount_cents": "1000",
+      "amount_localized": "R$ 10,00",
+      "receiver": {
+        "id": "77C2565F6F064A26ABED4255894224F0",
+        "name": "Nome da Conta"
+      }
+    }],
+    "received": [{
+      "id": "1234565F6F06132345ED425581234567",
+      "created_at": "2013-12-19T11:24:29-02:00",
+      "amount_cents": "2000",
+      "amount_localized": "R$ 20,00",
+      "sender": {
+        "id": "77C2565F6F0611111BED4255894224F0",
+        "name": "Conta Teste"
+      }
+    }]
+  },
+
+  "transfers": [{
+      "id": "1234565F6F06412345ED425581234567",
+      "created_at": "2013-11-19T11:24:29-02:00",
+      "amount_cents": "1000",
+      "amount_localized": "R$ 10,00",
+      "receiver": {
+        "id": "77C2565F6F064A26ABED4255894224F0",
+        "name": "Nome da Conta"
+      }
+    },
+    {
+      "id": "1234565F6F06132345ED425581234567",
+      "created_at": "2013-12-19T11:24:29-02:00",
+      "amount_cents": "2000",
+      "amount_localized": "R$ 20,00",
+      "sender": {
+        "id": "77C2565F6F0611111BED4255894224F0",
+        "name": "Conta Teste"
+      }
+    }
+  ],
+
+  "withdraw_requests_index": {
+    "totalItems": 2,
+    "items": [{
+        "id": "530706A3862D4BB49C8AC9637B850CDE",
+        "status": "pending",
+        "created_at": "2015-11-26T10:02:23-02:00",
+        "updated_at": "2015-11-26T10:02:23-02:00",
+        "reference": null,
+        "amount": "R$ 10,00",
+        "account_name": "Conta",
+        "account_id": "A682CECA59D74527B984CA529D7C2ED4",
+        "feedback": null,
+        "bank_address": "{\"bank\":\"Bradesco\",\"bank_cc\":\"11231 - 2\",\"bank_ag\":\"1234\",\"account_type\":\"Corrente \"}"
+      },
+      {
+        "id": "35FC23B99C4643569943B7C70DC05014",
+        "status": "pending",
+        "created_at": "2015-11-25T17:33:53-02:00",
+        "updated_at": "2015-11-25T17:33:53-02:00",
+        "reference": null,
+        "amount": "R$ 10,00",
+        "account_name": "Conta",
+        "account_id": "A682CECA59D74527B984CA529D7C2ED4",
+        "feedback": null,
+        "bank_address": "{\"bank\":\"Bradesco\",\"bank_cc\":\"11231-2\",\"bank_ag\":\"1234\",\"account_type\":\"Corrente\"}"
+      }
+    ]
+  },
+
+  "withdraw_requests": [{
+      "id": "530706A3862D4BB49C8AC9637B850CDE",
+      "status": "pending",
+      "created_at": "2015-11-26T10:02:23-02:00",
+      "updated_at": "2015-11-26T10:02:23-02:00",
+      "reference": null,
+      "amount": "R$ 10,00",
+      "account_name": "Conta",
+      "account_id": "A682CECA59D74527B984CA529D7C2ED4",
+      "feedback": null,
+      "bank_address": "{\"bank\":\"Bradesco\",\"bank_cc\":\"11231 - 2\",\"bank_ag\":\"1234\",\"account_type\":\"Corrente \"}"
+    },
+    {
+      "id": "35FC23B99C4643569943B7C70DC05014",
+      "status": "pending",
+      "created_at": "2015-11-25T17:33:53-02:00",
+      "updated_at": "2015-11-25T17:33:53-02:00",
+      "reference": null,
+      "amount": "R$ 10,00",
+      "account_name": "Conta",
+      "account_id": "A682CECA59D74527B984CA529D7C2ED4",
+      "feedback": null,
+      "bank_address": "{\"bank\":\"Bradesco\",\"bank_cc\":\"11231-2\",\"bank_ag\":\"1234\",\"account_type\":\"Corrente\"}"
+    }
+  ]
 }

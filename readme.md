@@ -15,6 +15,8 @@ docker run \
   -d leonardofalk/iugu-fake-api:latest
 ```
 
+Abrir [localhost:8000](localhost:8000)
+
 ### Rotas
 
 ```bash
