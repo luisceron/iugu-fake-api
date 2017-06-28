@@ -1,5 +1,7 @@
 # iugu-fake-api
 
+iugu-fake-api é um servidor REST fake para desenvolvimento de aplicações de consumo da API da iugu.
+
 ### Executar Servidor
 
 ```bash
