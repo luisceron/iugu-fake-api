@@ -4,7 +4,6 @@
     "message": "Autorizado",
     "invoice_id": "53B53D39F7AD44C4B8B873E15F067193"
   },
-
   "payment_token": {
     "id": "77C2565F6F064A26ABED4255894224F0",
     "method": "credit_card",
@@ -17,8 +16,8 @@
     },
     "test": false
   },
-
-  "customers": [{
+  "customers": [
+    {
       "id": "FF3149CE52CB4A789925F154B489BFDD",
       "email": "email@email.com",
       "name": "Nome do Cliente",
@@ -57,33 +56,72 @@
       "notes": null,
       "created_at": "2013-11-18T14:58:30-03:00",
       "updated_at": "2013-11-18T14:58:30-03:00"
+    },
+    {
+      "email": "luismarcoceron@gmail.com",
+      "name": "Luis ",
+      "id": "HyzePZ8I-"
+    },
+    {
+      "email": "luismarcoceron@gmail.com",
+      "name": "Luis ",
+      "id": "By5mu-LLb"
+    },
+    {
+      "email": "luismarcoceron@gmail.com",
+      "name": "Luis Ceron",
+      "id": "BkE5gmwP-"
+    },
+    {
+      "email": "luis@wonder.com.br",
+      "name": "Luis Wonder",
+      "id": "B1FFsNPDb"
     }
   ],
-
-  "payment_methods": [{
-    "id": "48D603C05F634244A1D3FC2BFF35D10A",
-    "description": "Meu Cartão de Crédito Um",
-    "item_type": "credit_card",
-    "data": {
-      "holder_name": "Joao Silva",
-      "display_number": "XXXX-XXXX-XXXX-1111",
-      "brand": "visa",
-      "month": 10,
-      "year": 2022
+  "payment_methods": [
+    {
+      "id": "48D603C05F634244A1D3FC2BFF35D10A",
+      "description": "Meu Cartão de Crédito Um",
+      "item_type": "credit_card",
+      "data": {
+        "holder_name": "Joao Silva",
+        "display_number": "XXXX-XXXX-XXXX-1111",
+        "brand": "visa",
+        "month": 10,
+        "year": 2022
+      }
+    },
+    {
+      "id": "9B41FB19CBA44913B1EF990A10382E7E",
+      "description": "Meu Cartão de Crédito Dois",
+      "item_type": "credit_card",
+      "data": {
+        "holder_name": "Jose Santos",
+        "display_number": "XXXX-XXXX-XXXX-1111",
+        "brand": "visa",
+        "month": 7,
+        "year": 2019
+      }
+    },
+    {
+      "description": "",
+      "token": "TOKEN_TEST",
+      "set_as_default": "true",
+      "id": "rkgWmtZLIZ"
+    },
+    {
+      "description": "",
+      "token": "TOKEN_TEST",
+      "set_as_default": "true",
+      "id": "SJgVcl7wwW"
+    },
+    {
+      "description": "",
+      "token": "TOKEN_TEST",
+      "set_as_default": "true",
+      "id": "SJeYFiEPvZ"
     }
-  }, {
-    "id": "9B41FB19CBA44913B1EF990A10382E7E",
-    "description": "Meu Cartão de Crédito Dois",
-    "item_type": "credit_card",
-    "data": {
-      "holder_name": "Jose Santos",
-      "display_number": "XXXX-XXXX-XXXX-1111",
-      "brand": "visa",
-      "month": 7,
-      "year": 2019
-    }
-  }],
-
+  ],
   "invoices_index": {
     "facets": {
       "status": {
@@ -91,7 +129,8 @@
         "missing": 0,
         "total": 2,
         "other": 0,
-        "terms": [{
+        "terms": [
+          {
             "term": "paid",
             "count": 1
           },
@@ -103,7 +142,8 @@
       }
     },
     "totalItems": 2,
-    "items": [{
+    "items": [
+      {
         "id": "E607FCCD119E45C59336DB78B54CF771",
         "due_date": "2013-11-30",
         "currency": "BRL",
@@ -124,15 +164,17 @@
         "commission": "R$ 0,00",
         "total": "R$ 10,00",
         "created_at": "18 Nov 14:58",
-        "items": [{
-          "id": "0E9E83C2E8B14AF0ADB2F5F6E97265AA",
-          "description": "Item Um",
-          "price_cents": 1000,
-          "quantity": 1,
-          "created_at": "2013-11-18T14:58:23-02:00",
-          "updated_at": "2013-11-18T14:58:23-02:00",
-          "price": "R$ 10,00"
-        }],
+        "items": [
+          {
+            "id": "0E9E83C2E8B14AF0ADB2F5F6E97265AA",
+            "description": "Item Um",
+            "price_cents": 1000,
+            "quantity": 1,
+            "created_at": "2013-11-18T14:58:23-02:00",
+            "updated_at": "2013-11-18T14:58:23-02:00",
+            "price": "R$ 10,00"
+          }
+        ],
         "variables": [],
         "logs": []
       },
@@ -157,22 +199,24 @@
         "user_id": null,
         "total": "R$ 2,00",
         "created_at": "24 Oct 14:21",
-        "items": [{
-          "id": "FBDBAF5E259C492C98E6C2CB493777F7",
-          "description": "Subscription Activation: plan1",
-          "price_cents": 200,
-          "quantity": 1,
-          "created_at": "2013-10-24T14:21:26-02:00",
-          "updated_at": "2013-10-24T14:21:26-02:00",
-          "price": "R$ 2,00"
-        }],
+        "items": [
+          {
+            "id": "FBDBAF5E259C492C98E6C2CB493777F7",
+            "description": "Subscription Activation: plan1",
+            "price_cents": 200,
+            "quantity": 1,
+            "created_at": "2013-10-24T14:21:26-02:00",
+            "updated_at": "2013-10-24T14:21:26-02:00",
+            "price": "R$ 2,00"
+          }
+        ],
         "variables": [],
         "logs": []
       }
     ]
   },
-
-  "invoices": [{
+  "invoices": [
+    {
       "id": "E607FCCD119E45C59336DB78B54CF771",
       "due_date": "2013-11-30",
       "currency": "BRL",
@@ -193,15 +237,17 @@
       "commission": "R$ 0,00",
       "total": "R$ 10,00",
       "created_at": "18 Nov 14:58",
-      "items": [{
-        "id": "0E9E83C2E8B14AF0ADB2F5F6E97265AA",
-        "description": "Item Um",
-        "price_cents": 1000,
-        "quantity": 1,
-        "created_at": "2013-11-18T14:58:23-02:00",
-        "updated_at": "2013-11-18T14:58:23-02:00",
-        "price": "R$ 10,00"
-      }],
+      "items": [
+        {
+          "id": "0E9E83C2E8B14AF0ADB2F5F6E97265AA",
+          "description": "Item Um",
+          "price_cents": 1000,
+          "quantity": 1,
+          "created_at": "2013-11-18T14:58:23-02:00",
+          "updated_at": "2013-11-18T14:58:23-02:00",
+          "price": "R$ 10,00"
+        }
+      ],
       "variables": [],
       "logs": []
     },
@@ -226,23 +272,66 @@
       "user_id": null,
       "total": "R$ 2,00",
       "created_at": "24 Oct 14:21",
-      "items": [{
-        "id": "FBDBAF5E259C492C98E6C2CB493777F7",
-        "description": "Subscription Activation: plan1",
-        "price_cents": 200,
-        "quantity": 1,
-        "created_at": "2013-10-24T14:21:26-02:00",
-        "updated_at": "2013-10-24T14:21:26-02:00",
-        "price": "R$ 2,00"
-      }],
+      "items": [
+        {
+          "id": "FBDBAF5E259C492C98E6C2CB493777F7",
+          "description": "Subscription Activation: plan1",
+          "price_cents": 200,
+          "quantity": 1,
+          "created_at": "2013-10-24T14:21:26-02:00",
+          "updated_at": "2013-10-24T14:21:26-02:00",
+          "price": "R$ 2,00"
+        }
+      ],
       "variables": [],
       "logs": []
     }
   ],
-
+  "marketplace_accounts": [
+    {
+      "id": "ANY_ID_ONLY_TEST_THIS_ATTR_DONT_COME_FROM_IUGU",
+      "account_id": "49196DF60BC64B6EB42DEC9C5D81C2CC",
+      "name": "Subconta",
+      "live_api_token": "8c018fa32cbae33a47f0ec27f2e84d8c",
+      "test_api_token": "aef793f12f6c67b93a4d39a4f42b7e98",
+      "user_token": "1015cd6f9ddc96a357403f994f907cfd"
+    },
+    {
+      "name": "1123",
+      "commission_percent": "12.0",
+      "id": "H1lIzwDI-"
+    },
+    {
+      "name": "Conta Santander",
+      "commission_percent": "40.0",
+      "id": "S11YjXDvb"
+    }
+  ],
   "plans_index": {
     "totalItems": 1,
-    "items": [{
+    "items": [
+      {
+        "id": "593C92165AF44493B65DE17A216C76D6",
+        "name": "Plano Básico",
+        "identifier": "basic_plan",
+        "interval": 1,
+        "interval_type": "months",
+        "created_at": "2014-04-23T17:14:15-03:00",
+        "updated_at": "2014-04-23T17:19:46-03:00",
+        "prices": [
+          {
+            "created_at": "2014-04-23T17:14:15-03:00",
+            "currency": "BRL",
+            "id": "F465EE77AC424DA2B075133C96FF10CA",
+            "updated_at": "2014-04-23T17:14:15-03:00",
+            "value_cents": 1000
+          }
+        ]
+      }
+    ]
+  },
+  "plans": [
+    {
       "id": "593C92165AF44493B65DE17A216C76D6",
       "name": "Plano Básico",
       "identifier": "basic_plan",
@@ -250,185 +339,72 @@
       "interval_type": "months",
       "created_at": "2014-04-23T17:14:15-03:00",
       "updated_at": "2014-04-23T17:19:46-03:00",
-      "prices": [{
-        "created_at": "2014-04-23T17:14:15-03:00",
-        "currency": "BRL",
-        "id": "F465EE77AC424DA2B075133C96FF10CA",
-        "updated_at": "2014-04-23T17:14:15-03:00",
-        "value_cents": 1000
-      }]
-    }]
-  },
-
-  "plans": [{
-    "id": "593C92165AF44493B65DE17A216C76D6",
-    "name": "Plano Básico",
-    "identifier": "basic_plan",
-    "interval": 1,
-    "interval_type": "months",
-    "created_at": "2014-04-23T17:14:15-03:00",
-    "updated_at": "2014-04-23T17:19:46-03:00",
-    "prices": [{
-      "created_at": "2014-04-23T17:14:15-03:00",
-      "currency": "BRL",
-      "id": "F465EE77AC424DA2B075133C96FF10CA",
-      "updated_at": "2014-04-23T17:14:15-03:00",
-      "value_cents": 1000
-    }]
-  }],
-
+      "prices": [
+        {
+          "created_at": "2014-04-23T17:14:15-03:00",
+          "currency": "BRL",
+          "id": "F465EE77AC424DA2B075133C96FF10CA",
+          "updated_at": "2014-04-23T17:14:15-03:00",
+          "value_cents": 1000
+        }
+      ]
+    }
+  ],
+  "request_verification": [
+    {
+      "id": "EC696038CCCE456893568C886AEBFD4F",
+      "data": {
+        "price_range": "Subconta",
+        "physical_products": "false",
+        "business_type": "Serviços de Limpeza",
+        "person_type": "Pessoa Física",
+        "automatic_transfer": "true",
+        "cpf": "123.123.123-12",
+        "name": "Nome da Pessoa",
+        "address": "Av. Paulista 320 cj 10",
+        "cep": "01419-000",
+        "city": "São Paulo",
+        "state": "São Paulo",
+        "telephone": "11-91231-1234",
+        "bank": "Itaú",
+        "bank_ag": "1234",
+        "account_type": "Corrente",
+        "bank_cc": "11231-2",
+        "document_id": 1,
+        "document_cpf": 2,
+        "document_activity": 3
+      },
+      "account_id": "49196DF60BC64B6EB42DEC9C5D81C2CC",
+      "created_at": "2014-03-14T11:12:18-03:00"
+    },
+    {
+      "data": "{:automatic_validation=>\"\", :price_range=>\"Até R$ 1000,00\", :physical_products=>\"Não\", :business_type=>\"Doações Eleitorais\", :person_type=>\"Pessoa Física\", :automatic_transfer=>\"Sim\", :cnpj=>\"\", :cpf=>\"\", :company_name=>\"\", :name=>\"\", :address=>\"Rua Tiradentes\", :cep=>\"99700-000\", :city=>\"Erechim\", :state=>\"Rio Grande do Sul\", :telphone=>\"5499778899\", :resp_name=>\"\", :resp_cpf=>\"\", :bank=>\"Bradesco\", :bank_ag=>\"1233\", :account_type=>\"Conta Poupança\", :bank_cc=>\"1233\"}",
+      "id": "ryTaCq2UZ"
+    },
+    {
+      "data": "{:automatic_validation=>\"\", :price_range=>\"Até R$ 1000,00\", :physical_products=>\"Não\", :business_type=>\"Doações Eleitorais\", :person_type=>\"Pessoa Física\", :automatic_transfer=>\"Sim\", :cnpj=>\"\", :cpf=>\"\", :company_name=>\"\", :name=>\"\", :address=>\"Rua Tiradentes\", :cep=>\"99700-000\", :city=>\"Erechim\", :state=>\"Rio Grande do Sul\", :telphone=>\"5499778899\", :resp_name=>\"\", :resp_cpf=>\"\", :bank=>\"Bradesco\", :bank_ag=>\"1233\", :account_type=>\"Conta Poupança\", :bank_cc=>\"1233\"}",
+      "id": "r1gdyjnLb"
+    },
+    {
+      "data": "{:automatic_validation=>\"Sim\", :price_range=>\"Até R$ 1000,00\", :physical_products=>\"Não\", :business_type=>\"Doações Eleitorais\", :person_type=>\"Pessoa Jurídica\", :automatic_transfer=>\"Sim\", :cnpj=>\"12312312312312\", :cpf=>\"\", :company_name=>\"\", :name=>\"\", :address=>\"Rua Tiradentes\", :cep=>\"23412-341\", :city=>\"Erechim\", :state=>\"Rio Grande do Sul\", :telphone=>\"5499778899\", :resp_name=>\"Almeida\", :resp_cpf=>\"12341234123\", :bank=>\"Banco do Brasil\", :bank_ag=>\"12344\", :account_type=>\"Conta Corrente\", :bank_cc=>\"123412\"}",
+      "id": "ByT0qk0UW"
+    },
+    {
+      "data": "{:automatic_validation=>\"Sim\", :price_range=>\"Até R$ 1000,00\", :physical_products=>\"Não\", :business_type=>\"Doações Eleitorais\", :person_type=>\"Pessoa Física\", :automatic_transfer=>\"Sim\", :cnpj=>\"\", :cpf=>\"12341234123\", :company_name=>\"\", :name=>\"Frederico\", :address=>\"Rua Tiradentes\", :cep=>\"99700-000\", :city=>\"Erechim\", :state=>\"Rio Grande do Sul\", :telphone=>\"5499778899\", :resp_name=>\"\", :resp_cpf=>\"\", :bank=>\"Caixa Econômica\", :bank_ag=>\"1234-5\", :account_type=>\"Conta Corrente\", :bank_cc=>\"56599-6\"}",
+      "id": "SyzM97LD-"
+    },
+    {
+      "data": "{:automatic_validation=>\"Sim\", :price_range=>\"13\", :physical_products=>\"Sim\", :business_type=>\"Teste\", :person_type=>\"Pessoa Física\", :automatic_transfer=>\"Sim\", :cnpj=>\"\", :cpf=>\"02005586099\", :company_name=>\"\", :name=>\"\", :address=>\"Rua Pedro Alvares Cabral\", :cep=>\"97000-000\", :city=>\"Erechim\", :state=>\"RS\", :telphone=>\"5499370036\", :resp_name=>\"\", :resp_cpf=>\"\", :bank=>\"Banco do Brasil\", :bank_ag=>\"0341\", :account_type=>\"Conta Poupança\", :bank_cc=>\"041288\"}",
+      "id": "By-Pf4LvW"
+    }
+  ],
   "subscriptions_index": {
-    "facets": {
-      "suspended": {
-        "_type": "filter",
-        "count": 1
-      },
-      "active": {
-        "_type": "filter",
-        "count": 1
-      },
-      "due": {
-        "_type": "filter",
-        "count": 1
-      }
-    },
-    "totalItems": 3,
-    "items": [{
-      "id": "ECF36F9AAF374D76A48646EDE8FE806D",
-      "suspended": false,
-      "plan_identifier": "id2",
-      "price_cents": 200,
-      "currency": "BRL",
-      "features": {
-        "feat": {
-          "name": "Feature",
-          "value": 10
-        }
-      },
-      "expires_at": null,
-      "created_at": "2013-11-19T11:24:29-02:00",
-      "updated_at": "2013-11-19T11:24:43-02:00",
-      "customer_name": "Nome do Cliente",
-      "customer_email": "email@email.com",
-      "cycled_at": null,
-      "customer_id": "FF3149CE52CB4A789925F154B489BFDD",
-      "plan_name": "plan1",
-      "customer_ref": "Nome do Cliente",
-      "plan_ref": "plan1",
-      "active": true,
-      "in_trial": null,
-      "recent_invoices": null,
-      "subitems": [{
-        "id": "6D518D88B33F48FEA8964D5573E220D3",
-        "description": "Item um",
-        "quantity": 1,
-        "price_cents": 1000,
-        "price": "R$ 10,00",
-        "total": "R$ 10,00"
-      }],
-      "logs": [{
-        "id": "477388CC4C024520B552641724A62970",
-        "description": "Fatura criada",
-        "notes": "Fatura criada 1x Ativação de Assinatura: plan1 = R$ 2,00;1x Item um = R$ 10,00;",
-        "created_at": "2013-11-19T11:24:43-02:00"
-      }, {
-        "id": "706436F169CE465B806163964A25400A",
-        "description": "Assinatura Criada",
-        "notes": "Assinatura Criada",
-        "created_at": "2013-11-19T11:24:29-02:00"
-      }]
-    }, {
-      "id": "ECF36F9AAF374D76A48646EDE8FE806D",
-      "suspended": false,
-      "plan_identifier": "id2",
-      "price_cents": 200,
-      "currency": "BRL",
-      "features": {
-        "feat": {
-          "name": "Feature",
-          "value": 10
-        }
-      },
-      "expires_at": null,
-      "created_at": "2013-11-19T11:24:29-02:00",
-      "updated_at": "2013-11-19T11:24:43-02:00",
-      "customer_name": "Nome do Cliente",
-      "customer_email": "email@email.com",
-      "cycled_at": null,
-      "customer_id": "FF3149CE52CB4A789925F154B489BFDD",
-      "plan_name": "plan1",
-      "customer_ref": "Nome do Cliente",
-      "plan_ref": "plan1",
-      "active": true,
-      "in_trial": null,
-      "recent_invoices": null,
-      "subitems": [{
-        "id": "6D518D88B33F48FEA8964D5573E220D3",
-        "description": "Item um",
-        "quantity": 1,
-        "price_cents": 1000,
-        "price": "R$ 10,00",
-        "total": "R$ 10,00"
-      }],
-      "logs": [{
-        "id": "477388CC4C024520B552641724A62970",
-        "description": "Fatura criada",
-        "notes": "Fatura criada 1x Ativação de Assinatura: plan1 = R$ 2,00;1x Item um = R$ 10,00;",
-        "created_at": "2013-11-19T11:24:43-02:00"
-      }, {
-        "id": "706436F169CE465B806163964A25400A",
-        "description": "Assinatura Criada",
-        "notes": "Assinatura Criada",
-        "created_at": "2013-11-19T11:24:29-02:00"
-      }]
-    }, {
-      "id": "ECF36F9AAF374D76A48646EDE8FE806D",
-      "suspended": false,
-      "plan_identifier": "id2",
-      "price_cents": 200,
-      "currency": "BRL",
-      "features": {
-        "feat": {
-          "name": "Feature",
-          "value": 10
-        }
-      },
-      "expires_at": null,
-      "created_at": "2013-11-19T11:24:29-02:00",
-      "updated_at": "2013-11-19T11:24:43-02:00",
-      "customer_name": "Nome do Cliente",
-      "customer_email": "email@email.com",
-      "cycled_at": null,
-      "customer_id": "FF3149CE52CB4A789925F154B489BFDD",
-      "plan_name": "plan1",
-      "customer_ref": "Nome do Cliente",
-      "plan_ref": "plan1",
-      "active": true,
-      "in_trial": null,
-      "recent_invoices": null,
-      "subitems": [{
-        "id": "6D518D88B33F48FEA8964D5573E220D3",
-        "description": "Item um",
-        "quantity": 1,
-        "price_cents": 1000,
-        "price": "R$ 10,00",
-        "total": "R$ 10,00"
-      }],
-      "logs": [{
-        "id": "477388CC4C024520B552641724A62970",
-        "description": "Fatura criada",
-        "notes": "Fatura criada 1x Ativação de Assinatura: plan1 = R$ 2,00;1x Item um = R$ 10,00;",
-        "created_at": "2013-11-19T11:24:43-02:00"
-      }, {
-        "id": "706436F169CE465B806163964A25400A",
-        "description": "Assinatura Criada",
-        "notes": "Assinatura Criada",
-        "created_at": "2013-11-19T11:24:29-02:00"
-      }]
-    }]
+    "customer_id": "SyS8bzU8Z",
+    "only_on_charge_success": "true",
+    "subitems": "{:description=>\"\", :price_cents=>nil, :quantity=>1, :recurrent=>true}"
   },
-
-  "subscriptions": [{
+  "subscriptions": [
+    {
       "id": "ECF36F9AAF374D76A48646EDE8FE806D",
       "suspended": false,
       "plan_identifier": "id2",
@@ -453,69 +429,30 @@
       "active": true,
       "in_trial": null,
       "recent_invoices": null,
-      "subitems": [{
-        "id": "6D518D88B33F48FEA8964D5573E220D3",
-        "description": "Item um",
-        "quantity": 1,
-        "price_cents": 1000,
-        "price": "R$ 10,00",
-        "total": "R$ 10,00"
-      }],
-      "logs": [{
-        "id": "477388CC4C024520B552641724A62970",
-        "description": "Fatura criada",
-        "notes": "Fatura criada 1x Ativação de Assinatura: plan1 = R$ 2,00;1x Item um = R$ 10,00;",
-        "created_at": "2013-11-19T11:24:43-02:00"
-      }, {
-        "id": "706436F169CE465B806163964A25400A",
-        "description": "Assinatura Criada",
-        "notes": "Assinatura Criada",
-        "created_at": "2013-11-19T11:24:29-02:00"
-      }]
-    }, {
-      "id": "ECF36F9AAF374D76A48646EDE8FE806D",
-      "suspended": false,
-      "plan_identifier": "id2",
-      "price_cents": 200,
-      "currency": "BRL",
-      "features": {
-        "feat": {
-          "name": "Feature",
-          "value": 10
+      "subitems": [
+        {
+          "id": "6D518D88B33F48FEA8964D5573E220D3",
+          "description": "Item um",
+          "quantity": 1,
+          "price_cents": 1000,
+          "price": "R$ 10,00",
+          "total": "R$ 10,00"
         }
-      },
-      "expires_at": null,
-      "created_at": "2013-11-19T11:24:29-02:00",
-      "updated_at": "2013-11-19T11:24:43-02:00",
-      "customer_name": "Nome do Cliente",
-      "customer_email": "email@email.com",
-      "cycled_at": null,
-      "customer_id": "FF3149CE52CB4A789925F154B489BFDD",
-      "plan_name": "plan1",
-      "customer_ref": "Nome do Cliente",
-      "plan_ref": "plan1",
-      "active": true,
-      "in_trial": null,
-      "recent_invoices": null,
-      "subitems": [{
-        "id": "6D518D88B33F48FEA8964D5573E220D3",
-        "description": "Item um",
-        "quantity": 1,
-        "price_cents": 1000,
-        "price": "R$ 10,00",
-        "total": "R$ 10,00"
-      }],
-      "logs": [{
-        "id": "477388CC4C024520B552641724A62970",
-        "description": "Fatura criada",
-        "notes": "Fatura criada 1x Ativação de Assinatura: plan1 = R$ 2,00;1x Item um = R$ 10,00;",
-        "created_at": "2013-11-19T11:24:43-02:00"
-      }, {
-        "id": "706436F169CE465B806163964A25400A",
-        "description": "Assinatura Criada",
-        "notes": "Assinatura Criada",
-        "created_at": "2013-11-19T11:24:29-02:00"
-      }]
+      ],
+      "logs": [
+        {
+          "id": "477388CC4C024520B552641724A62970",
+          "description": "Fatura criada",
+          "notes": "Fatura criada 1x Ativação de Assinatura: plan1 = R$ 2,00;1x Item um = R$ 10,00;",
+          "created_at": "2013-11-19T11:24:43-02:00"
+        },
+        {
+          "id": "706436F169CE465B806163964A25400A",
+          "description": "Assinatura Criada",
+          "notes": "Assinatura Criada",
+          "created_at": "2013-11-19T11:24:29-02:00"
+        }
+      ]
     },
     {
       "id": "ECF36F9AAF374D76A48646EDE8FE806D",
@@ -542,52 +479,314 @@
       "active": true,
       "in_trial": null,
       "recent_invoices": null,
-      "subitems": [{
-        "id": "6D518D88B33F48FEA8964D5573E220D3",
-        "description": "Item um",
-        "quantity": 1,
-        "price_cents": 1000,
-        "price": "R$ 10,00",
-        "total": "R$ 10,00"
-      }],
-      "logs": [{
-        "id": "477388CC4C024520B552641724A62970",
-        "description": "Fatura criada",
-        "notes": "Fatura criada 1x Ativação de Assinatura: plan1 = R$ 2,00;1x Item um = R$ 10,00;",
-        "created_at": "2013-11-19T11:24:43-02:00"
-      }, {
-        "id": "706436F169CE465B806163964A25400A",
-        "description": "Assinatura Criada",
-        "notes": "Assinatura Criada",
-        "created_at": "2013-11-19T11:24:29-02:00"
-      }]
+      "subitems": [
+        {
+          "id": "6D518D88B33F48FEA8964D5573E220D3",
+          "description": "Item um",
+          "quantity": 1,
+          "price_cents": 1000,
+          "price": "R$ 10,00",
+          "total": "R$ 10,00"
+        }
+      ],
+      "logs": [
+        {
+          "id": "477388CC4C024520B552641724A62970",
+          "description": "Fatura criada",
+          "notes": "Fatura criada 1x Ativação de Assinatura: plan1 = R$ 2,00;1x Item um = R$ 10,00;",
+          "created_at": "2013-11-19T11:24:43-02:00"
+        },
+        {
+          "id": "706436F169CE465B806163964A25400A",
+          "description": "Assinatura Criada",
+          "notes": "Assinatura Criada",
+          "created_at": "2013-11-19T11:24:29-02:00"
+        }
+      ]
+    },
+    {
+      "id": "ECF36F9AAF374D76A48646EDE8FE806D",
+      "suspended": false,
+      "plan_identifier": "id2",
+      "price_cents": 200,
+      "currency": "BRL",
+      "features": {
+        "feat": {
+          "name": "Feature",
+          "value": 10
+        }
+      },
+      "expires_at": null,
+      "created_at": "2013-11-19T11:24:29-02:00",
+      "updated_at": "2013-11-19T11:24:43-02:00",
+      "customer_name": "Nome do Cliente",
+      "customer_email": "email@email.com",
+      "cycled_at": null,
+      "customer_id": "FF3149CE52CB4A789925F154B489BFDD",
+      "plan_name": "plan1",
+      "customer_ref": "Nome do Cliente",
+      "plan_ref": "plan1",
+      "active": true,
+      "in_trial": null,
+      "recent_invoices": null,
+      "subitems": [
+        {
+          "id": "6D518D88B33F48FEA8964D5573E220D3",
+          "description": "Item um",
+          "quantity": 1,
+          "price_cents": 1000,
+          "price": "R$ 10,00",
+          "total": "R$ 10,00"
+        }
+      ],
+      "logs": [
+        {
+          "id": "477388CC4C024520B552641724A62970",
+          "description": "Fatura criada",
+          "notes": "Fatura criada 1x Ativação de Assinatura: plan1 = R$ 2,00;1x Item um = R$ 10,00;",
+          "created_at": "2013-11-19T11:24:43-02:00"
+        },
+        {
+          "id": "706436F169CE465B806163964A25400A",
+          "description": "Assinatura Criada",
+          "notes": "Assinatura Criada",
+          "created_at": "2013-11-19T11:24:29-02:00"
+        }
+      ]
+    },
+    {
+      "customer_id": "rJiVMMUI-",
+      "only_on_charge_success": "true",
+      "subitems": "{:description=>\"\", :price_cents=>nil, :quantity=>1, :recurrent=>true}",
+      "id": "HJ-jNfzILW"
+    },
+    {
+      "id": "rytdGf88b"
+    },
+    {
+      "customer_id": "S1kKfz8LZ",
+      "only_on_charge_success": "true",
+      "subitems": "{:description=>\"\", :price_cents=>nil, :quantity=>1, :recurrent=>true}",
+      "id": "HJbJYGzUI-"
+    },
+    {
+      "id": "BJOKzG8UZ"
+    },
+    {
+      "customer_id": "rJxszf8L-",
+      "only_on_charge_success": "true",
+      "subitems": "{:description=>\"\", :price_cents=>nil, :quantity=>1, :recurrent=>true}",
+      "id": "Sk-xsfG88W"
+    },
+    {
+      "id": "SyzxszfI8Z"
+    },
+    {
+      "customer_id": "B1rhzf8U-",
+      "only_on_charge_success": "true",
+      "subitems": "{:description=>\"\", :price_cents=>nil, :quantity=>1, :recurrent=>true}",
+      "id": "HJWr3zfL8Z"
+    },
+    {
+      "id": "BkGB2zMIIZ"
+    },
+    {
+      "customer_id": "ry26zMILZ",
+      "only_on_charge_success": "true",
+      "subitems": "{:description=>\"\", :price_cents=>nil, :quantity=>1, :recurrent=>true}",
+      "id": "SkW3pGzIIb"
+    },
+    {
+      "id": "SJz2TGG8LZ"
+    },
+    {
+      "customer_id": "BkPCKCxvW",
+      "only_on_charge_success": "true",
+      "subitems": "{:description=>\"\", :price_cents=>nil, :quantity=>1, :recurrent=>true}",
+      "id": "HJx_RFRxwb"
+    },
+    {
+      "customer_id": "HyCl2Rev-",
+      "only_on_charge_success": "true",
+      "subitems": "{:description=>\"\", :price_cents=>nil, :quantity=>1, :recurrent=>true}",
+      "id": "HkbAg2RlP-"
+    },
+    {
+      "customer_id": "r1vgLkMP-",
+      "only_on_charge_success": "true",
+      "subitems": "{:description=>\"\", :price_cents=>nil, :quantity=>1, :recurrent=>true}",
+      "id": "r1lueI1zPZ"
+    },
+    {
+      "id": "BJxsElfv-"
+    },
+    {
+      "id": "BkE0VxzP-"
+    },
+    {
+      "customer_id": "SJFKolGvW",
+      "only_on_charge_success": "true",
+      "subitems": "{:description=>\"\", :price_cents=>nil, :quantity=>1, :recurrent=>true}",
+      "id": "rkZYFsgzD-"
+    },
+    {
+      "customer_id": "Sk7dhxMvW",
+      "only_on_charge_success": "true",
+      "subitems": "{:description=>\"\", :price_cents=>nil, :quantity=>1, :recurrent=>true}",
+      "id": "H14unxMwW"
+    },
+    {
+      "id": "HkhKhxMDZ"
+    },
+    {
+      "customer_id": "SkHi7ZGPW",
+      "only_on_charge_success": "true",
+      "subitems": "{:description=>\"\", :price_cents=>nil, :quantity=>1, :recurrent=>true}",
+      "id": "rybBoXWMPW"
+    },
+    {
+      "customer_id": "rkyAS-fvb",
+      "only_on_charge_success": "true",
+      "subitems": "{:description=>\"\", :price_cents=>50, :quantity=>1, :recurrent=>true}",
+      "id": "BJWyABbGPb"
+    },
+    {
+      "customer_id": "HkC3IbfPb",
+      "only_on_charge_success": "true",
+      "subitems": "{:description=>\"\", :price_cents=>110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110110, :quantity=>1, :recurrent=>true}",
+      "id": "Hyb0hLWGPW"
+    },
+    {
+      "id": "H1ppUZGD-"
+    },
+    {
+      "id": "B1gaaU-zD-"
+    },
+    {
+      "id": "BynWwZfvW"
+    },
+    {
+      "customer_id": "S1m8PVfDZ",
+      "only_on_charge_success": "true",
+      "subitems": "{:description=>\"\", :price_cents=>100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100, :quantity=>1, :recurrent=>true}",
+      "id": "BkNIDNzD-"
+    },
+    {
+      "customer_id": "r1-6FVzvW",
+      "only_on_charge_success": "true",
+      "subitems": "{:description=>\"\", :price_cents=>50, :quantity=>1, :recurrent=>true}",
+      "id": "ryxG6YVGD-"
+    },
+    {
+      "customer_id": "rJ_YpNMw-",
+      "only_on_charge_success": "true",
+      "subitems": "{:description=>\"\", :price_cents=>60, :quantity=>1, :recurrent=>true}",
+      "id": "rylFY6EfDb"
+    },
+    {
+      "customer_id": "ryC-AVfwb",
+      "only_on_charge_success": "true",
+      "subitems": "{:description=>\"\", :price_cents=>60, :quantity=>1, :recurrent=>true}",
+      "id": "BybRWA4GvW"
+    },
+    {
+      "customer_id": "SJl8AVMwZ",
+      "only_on_charge_success": "true",
+      "subitems": "{:description=>\"\", :price_cents=>60, :quantity=>1, :recurrent=>true}",
+      "id": "H1Wl8C4fPb"
+    },
+    {
+      "customer_id": "rywhCNfD-",
+      "only_on_charge_success": "true",
+      "subitems": "{:description=>\"\", :price_cents=>60, :quantity=>1, :recurrent=>true}",
+      "id": "HJZvnR4zw-"
+    },
+    {
+      "customer_id": "BJeE1SGvZ",
+      "only_on_charge_success": "true",
+      "subitems": "{:description=>\"\", :price_cents=>60, :quantity=>1, :recurrent=>true}",
+      "id": "BybgNJSMvW"
+    },
+    {
+      "customer_id": "H1TLZrGvW",
+      "only_on_charge_success": "true",
+      "subitems": "{:description=>\"\", :price_cents=>50, :quantity=>1, :recurrent=>true}",
+      "id": "B1CLbSzDZ"
+    },
+    {
+      "customer_id": "S1c3wASvb",
+      "only_on_charge_success": "true",
+      "subitems": "{:description=>\"\", :price_cents=>10, :quantity=>1, :recurrent=>true}",
+      "id": "rJW9nwASPZ"
+    },
+    {
+      "customer_id": "S1c3wASvb",
+      "only_on_charge_success": "true",
+      "subitems": "{:description=>\"\", :price_cents=>10, :quantity=>1, :recurrent=>true}",
+      "id": "r1WOw1UDZ"
+    },
+    {
+      "customer_id": "S1c3wASvb",
+      "only_on_charge_success": "true",
+      "subitems": "{:description=>\"\", :price_cents=>10, :quantity=>1, :recurrent=>true}",
+      "id": "SkYtPkLDW"
+    },
+    {
+      "customer_id": "S1c3wASvb",
+      "only_on_charge_success": "true",
+      "subitems": "{:description=>\"\", :price_cents=>10, :quantity=>1, :recurrent=>true}",
+      "id": "HyLGuyLw-"
+    },
+    {
+      "customer_id": "S1c3wASvb",
+      "only_on_charge_success": "true",
+      "subitems": "{:description=>\"\", :price_cents=>10, :quantity=>1, :recurrent=>true}",
+      "id": "ByxX_k8PW"
+    },
+    {
+      "customer_id": "S1c3wASvb",
+      "only_on_charge_success": "true",
+      "subitems": "{:description=>\"\", :price_cents=>70707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070, :quantity=>1, :recurrent=>true}",
+      "id": "B1cdFJUvW"
+    },
+    {
+      "id": "H1_O9yUv-"
+    },
+    {
+      "customer_id": "B1FFsNPDb",
+      "only_on_charge_success": "true",
+      "subitems": "{:description=>\"\", :price_cents=>100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100100, :quantity=>1, :recurrent=>true}",
+      "id": "S1WYtjEvDW"
     }
   ],
-
   "transfers_index": {
-    "sent": [{
-      "id": "1234565F6F06412345ED425581234567",
-      "created_at": "2013-11-19T11:24:29-02:00",
-      "amount_cents": "1000",
-      "amount_localized": "R$ 10,00",
-      "receiver": {
-        "id": "77C2565F6F064A26ABED4255894224F0",
-        "name": "Nome da Conta"
+    "sent": [
+      {
+        "id": "1234565F6F06412345ED425581234567",
+        "created_at": "2013-11-19T11:24:29-02:00",
+        "amount_cents": "1000",
+        "amount_localized": "R$ 10,00",
+        "receiver": {
+          "id": "77C2565F6F064A26ABED4255894224F0",
+          "name": "Nome da Conta"
+        }
       }
-    }],
-    "received": [{
-      "id": "1234565F6F06132345ED425581234567",
-      "created_at": "2013-12-19T11:24:29-02:00",
-      "amount_cents": "2000",
-      "amount_localized": "R$ 20,00",
-      "sender": {
-        "id": "77C2565F6F0611111BED4255894224F0",
-        "name": "Conta Teste"
+    ],
+    "received": [
+      {
+        "id": "1234565F6F06132345ED425581234567",
+        "created_at": "2013-12-19T11:24:29-02:00",
+        "amount_cents": "2000",
+        "amount_localized": "R$ 20,00",
+        "sender": {
+          "id": "77C2565F6F0611111BED4255894224F0",
+          "name": "Conta Teste"
+        }
       }
-    }]
+    ]
   },
-
-  "transfers": [{
+  "transfers": [
+    {
       "id": "1234565F6F06412345ED425581234567",
       "created_at": "2013-11-19T11:24:29-02:00",
       "amount_cents": "1000",
@@ -608,10 +807,30 @@
       }
     }
   ],
-
+  "web_hooks": [
+    {
+      "id": "D57FCEA0EB7A4647B05E1B562035D9CA",
+      "url": "https://endpoint_para_gatilho.in/123",
+      "event": "invoice.created"
+    },
+    {
+      "id": "S1O4Ytywb"
+    },
+    {
+      "event": "invoice.status_changed",
+      "url": "/iugu/gatilhos/invoice_created_2",
+      "id": "BybH5FJPW"
+    },
+    {
+      "event": "invoice.status_changed2212",
+      "url": "/iugu/gatilhos/invoice_created",
+      "id": "HkKi5tkPZ"
+    }
+  ],
   "withdraw_requests_index": {
     "totalItems": 2,
-    "items": [{
+    "items": [
+      {
         "id": "530706A3862D4BB49C8AC9637B850CDE",
         "status": "pending",
         "created_at": "2015-11-26T10:02:23-02:00",
@@ -637,8 +856,8 @@
       }
     ]
   },
-
-  "withdraw_requests": [{
+  "withdraw_requests": [
+    {
       "id": "530706A3862D4BB49C8AC9637B850CDE",
       "status": "pending",
       "created_at": "2015-11-26T10:02:23-02:00",
