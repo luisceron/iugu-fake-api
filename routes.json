@@ -1,5 +1,6 @@
 {
   "/v1/": "/",
+  "/v1/accounts/:id/request_verification": "/request_verification",
   "/v1/charge/": "/charge",
   "/v1/payment_token": "/payment_token",
   "/v1/customers": "/customers",
@@ -9,13 +10,17 @@
   "/v1/invoices": "/invoices_index",
   "/v1/invoices/:id": "/invoices?id=:id",
   "/v1/invoices/:id/:method": "/invoices?id=:id",
+  "/v1/marketplace/create_account": "/marketplace_accounts",
   "/v1/plans": "/plans_index",
   "/v1/plans/:id": "/plans?id=:id",
-  "/v1/subscriptions": "/subscriptions_index",
+  "/v1/subscriptions": "/subscriptions",
   "/v1/subscriptions/:id": "/subscriptions?id=:id",
   "/v1/subscriptions/:id/:method": "/subscriptions?id=:id",
   "/v1/transfers": "/transfers_index",
   "/v1/transfers/:id": "/transfers?id=:id",
+  "/v1/web_hooks": "/web_hooks",
+  "/v1/web_hooks/:id": "/web_hooks?id=:id",
+  "/v1/web_hooks/:id/:method": "/web_hooks?id=:id",
   "/v1/withdraw_requests": "/withdraw_requests_index",
   "/v1/withdraw_requests/:id": "/withdraw_requests_index?id=:id"
 }
